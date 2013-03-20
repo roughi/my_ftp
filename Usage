@@ -1,0 +1,21 @@
+
+Serveur :
+Usage: $>./serveur [-port 1024-65535] (Default: 1024) [-maxclient 0-128] (Default: 16)
+Les comptes utilisateurs se font dans le fichier ./user_files/users.conf , sous la forme un login et mot de passe par ligne. Voici un exemple :
+wowi toto42
+
+Client :
+
+Usage: $>./client [host] [port]
+
+Une fois connecte un login et mot de passe sera demande (Entrer "anonymous" en login et n'importe quel mot de passe pour se connecter sur le compte anonyme).
+
+Commandes :
+                * ls          : liste le répertoire courant du serveur
+                * cd          : change le répertoire courant du serveur
+                * get _file_  : récupère le fichier _file_ du serveur
+                                 vers le client
+                * put _file_  : envoi un fichier du client vers le serveur
+                * pwd         : affiche le répertoire courant sur le serveur
+                * quit        : coupe la connection + sort du programme
+		* lcd+lpwd+lls (concerne le directory local, pas sur le serveur)
